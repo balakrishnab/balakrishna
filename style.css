@@ -1,0 +1,298 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@400;500;600;700&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Pacifico&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Courgette&display=swap');
+
+
+
+body {
+    background-image: url(assets/Doubs.svg);
+    background-repeat: no-repeat;
+    background-size: cover;
+    display: grid;
+    place-items: center;
+    height: 100vh;
+    margin: 0;
+    font-family: 'Poppins', sans-serif;
+    box-sizing: border-box;
+}
+
+
+.terminal {
+    position: relative;
+    background: #1c1c1c;
+    border-radius: 4px;
+    height: 90vh;
+    width: 80vw;
+    box-shadow: 0 3px 6px rgba(0,0,0,0.16), 0 6px 6px rgba(0,0,0,0.23);
+}
+
+.terminal .header {
+    position: absolute;
+    height: 35px;
+    width: 100%;
+    background: #bbbbbb;
+    border-top-left-radius: 3px;
+    border-top-right-radius: 3px;
+    top: 0;
+    left: 0;
+    right: 0;
+}
+
+.terminal .header span {
+    position: absolute;
+    height: 16px;
+    width: 16px;
+    border-radius: 50%;
+    box-shadow: 1px 2px 20px rgba(0,0,0,0.3);
+}
+
+.terminal .header span:nth-child(1) {
+    background-color: red;
+    top: 9.5px;
+    left: 15px;
+}
+
+.terminal .header span:nth-child(2) {
+    background-color: darkorange;
+    top: 9.5px;
+    left: 40px;
+}
+
+.terminal .header span:nth-child(3) {
+    background-color: green;
+    top: 9.5px;
+    left: 67px;
+}
+
+.terminal .header .title {
+    position: absolute;
+    left: 50%;
+    top: 50%;
+    transform: translate(-50%, -50%);
+}
+
+.terminal .header .title svg {
+    width: 25px;
+    height: 25px;
+    color: #000;
+}
+
+.terminal .header .logos {
+    position: absolute;
+    right: 15px;
+    padding-top: 7px;
+}
+
+.terminal .logos ul {
+    list-style: none;
+    display: flex;
+}
+
+.terminal .logos ul li {
+    cursor: pointer;
+    margin-left: 4px;
+    margin-top: -3px;
+}
+
+.terminal .header .logos svg {
+    width: 22px;
+    height: 22px;
+    margin-left: 2px;
+}
+
+.terminal .content {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+}
+
+
+.terminal .content section {
+    object-fit: cover;
+    display: none;
+    transition: 0.5s;
+    background-position: center;
+}
+
+.terminal .content section.active {
+    display: block;
+}
+
+.terminal .content .head_title{
+    position: absolute;
+    left: 50%;
+    top: 50%;
+    transform: translate(-175%, -80%);
+}
+
+
+.head_title h1 {
+    font-family: 'Pacifico', cursive;
+    color: #fff;
+}
+
+.head_title h2 {
+    font-family: 'Courgette', cursive;
+    color: #fff;
+}
+
+.head_title span {
+    color: #fff;
+    font-family: 'Poppins', sans-serif;
+    font-size: 18px;
+}
+
+.content .head_image {
+    position: absolute;
+    right: 80px;
+    top: 20px;
+}
+
+.content section {
+    color: #fff;
+}
+
+#experience_section {
+    position: absolute;
+    top: 60px;
+    left: 20px;
+}
+
+#tech_section {
+    position: absolute;
+    top: 60px;
+    left: 20px;
+}
+
+.companies {
+  position: relative;
+  display: flex;
+  justify-content: flex-start;
+  flex-wrap: wrap;
+  top: 20px;
+  left: 65px;
+}
+
+.companies div.org {
+    position: relative;
+    width: 450px;
+    height: 170px;
+    margin: 10px;
+    box-shadow: 10px 10px 30px rgba(0,0,0,0.5);
+    border-radius: 3px;
+    background: rgba(255, 255, 255, 0.1);
+    overflow: hidden;
+    backdrop-filter: blur(4px);
+}
+
+/* .org.org_1 img {
+    height: 50px;
+    width: 150px;
+}
+
+.org.org_2 img {
+    height: 75px;
+    padding: 10px;
+}
+
+.org.org_3 img {
+    height: 70px;
+    width: 150px;
+    padding: 10px;
+}
+
+.org.org_4 img {
+    width: 85px;
+    height: 80px;
+    padding: 10px;
+} */
+
+
+.org {
+    padding: 20px;
+    display: block;
+}
+
+.org p:nth-child(1) {
+    font-size: 12px;
+}
+
+.skills {
+    padding: 20px 50px 0px 50px;
+}
+
+.skills img {
+    width: 80px;
+    height: 80px;
+    display: flex;
+    justify-content: center;
+    justify-items: center;
+    align-items: center;
+  }
+
+hr {
+    width: 150px;
+    opacity: 1;
+    position: absolute;
+    margin: auto;
+}
+
+
+#contact_section {
+    position: absolute;
+    top: 60px;
+    left: 20px;
+}
+
+.contact_profile {
+    position: relative;
+    top: 20px;
+    left: 155px;
+    display: flex;
+    flex-direction: row;
+}
+
+.contact_profile div {
+    padding: 10px;
+    margin: 20px;
+}
+
+.contact_profile p {
+    margin: auto;
+}
+
+.contact-seperator {
+    border: 1px solid #fff;
+    width: 500px;
+    margin-left: 270px;
+    margin-top: 40px;
+}
+
+.contact_profile > div.email > svg, .contact_profile > div.phone > svg, .contact_profile > div.location > svg {
+    width: 22px;
+    height: 22px;
+    margin-bottom: 5px;
+}
+
+.socila-media {
+    position: relative;
+    display: flex;
+    top: 10px;
+    left: 315px;
+}
+
+.socila-media > div {
+    padding: 10px;
+    margin: 30px 15px;
+}
+
+.socila-media > div > a {
+    color: #ffffff;
+    text-decoration: none;
+}
+
+.socila-media > div > a > svg {
+    width: 30px;
+    height: 30px;
+    cursor: pointer;
+}
